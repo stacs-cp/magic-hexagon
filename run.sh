@@ -14,7 +14,7 @@ parallel --no-notice \
     --eta \
     --joblog outputs/joblog1.tsv \
     --results outputs/results1 \
-    --timeout 600 \
+    --timeout 3600 \
     :::: commands.txt
 
 parallel --no-notice \
