@@ -1,0 +1,9 @@
+conjure-output/*fzn
+conjure-output/*minion
+conjure-output/*param
+conjure-output/*solution
+conjure-output/*infor
+myenv
+__pycache__
+
+

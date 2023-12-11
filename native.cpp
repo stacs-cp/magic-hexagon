@@ -1,4 +1,8 @@
+#include <iostream>
+#include <map>
+#include <tuple>
 #include "ortools/sat/cp_model.h"
+#include "ortools/sat/cp_model_solver.h"
 
 using namespace operations_research;
 using namespace operations_research::sat;
@@ -7,11 +11,10 @@ int main()
 {
     CpModelBuilder cp_model;
 
-    int order = 4;
-    int ix = order - 1;
-    int diameter = order * 2 - 1;
-    int max_val = 3 * order * order - 3 * order + 1;
-    int total_sum = max_val * (max_val + 1) / 2;
+    const int order = 4;
+    const int ix = order - 1;
+    const int max_val = 3 * order * order - 3 * order + 1;
+    const int total_sum = (max_val * (max_val + 1)) / 2;
 
     // Creating the hexagon matrix
     std::map<std::tuple<int, int, int>, IntVar> hexagon;
@@ -25,7 +28,10 @@ int main()
                 {
                     hexagon[{i, j, k}] = cp_model.NewIntVar(Domain(1, max_val));
                 }
-                // Note: No need to explicitly set 0 for unused cells in C++
+                else
+                {
+                    hexagon[{i, j, k}] = cp_model.NewIntVar(Domain(0, 0));
+                }
             }
         }
     }
@@ -57,7 +63,10 @@ int main()
         {
             for (int k = -ix; k <= ix; ++k)
             {
-                sum_i += hexagon[{i, j, k}];
+                if (i + j + k == 0)
+                {
+                    sum_i += hexagon[{i, j, k}];
+                }
             }
         }
         cp_model.AddEquality(sum_i, sumsto);
@@ -70,7 +79,10 @@ int main()
         {
             for (int k = -ix; k <= ix; ++k)
             {
-                sum_j += hexagon[{i, j, k}];
+                if (i + j + k == 0)
+                {
+                    sum_j += hexagon[{i, j, k}];
+                }
             }
         }
         cp_model.AddEquality(sum_j, sumsto);
@@ -83,26 +95,35 @@ int main()
         {
             for (int j = -ix; j <= ix; ++j)
             {
-                sum_k += hexagon[{i, j, k}];
+                if (i + j + k == 0)
+                {
+                    sum_k += hexagon[{i, j, k}];
+                }
             }
         }
         cp_model.AddEquality(sum_k, sumsto);
     }
 
-    CpSolver solver;
     Model model;
 
-    // Setting solver parameters
-    CpSolverResponse response;
-    solver.GetParameters().set_max_time_in_seconds(10);
-    solver.GetParameters().set_num_search_workers(4);
-    solver.GetParameters().set_log_search_progress(true);
+    SatParameters parameters;
+    // parameters.set_max_time_in_seconds(10);
+    parameters.set_num_search_workers(3);
+    parameters.set_log_search_progress(true);
+    parameters.set_log_search_progress(true);
+    // parameters.trace
+    model.Add(NewSatParameters(parameters));
+    const CpSolverResponse response = SolveCpModel(cp_model.Build(), &model);
 
-    // Solving the model
-    response = SolveCpModel(cp_model.Build(), &solver);
+    // parameters.subsolvers()
 
-    std::cout << "Total Solution Time: " << solverDuration.count() / 1000.0 << " s\n";
-    std::cout << "Status: " << CpSolverResponseStatus_Name(response.status()) << "\n";
+    // CpSolver solver;
+
+    // // Setting solver parameters
+    // CpSolverResponse response;
+    // solver.GetParameters().set_max_time_in_seconds(10);
+    // solver.GetParameters().set_num_search_workers(4);
+    // solver.GetParameters().set_log_search_progress(true);
 
     // Print the solution
     if (response.status() == CpSolverStatus::OPTIMAL || response.status() == CpSolverStatus::FEASIBLE)
@@ -121,6 +142,10 @@ int main()
             }
             std::cout << "\n";
         }
+    }
+    else
+    {
+        std::cout << "No solution" << std::endl;
     }
 
     return 0;
