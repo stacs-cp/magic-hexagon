@@ -27,4 +27,4 @@ with open("commands.txt", "w") as commandsfile:
                         print(f"""
                             letting order be {order}
                             letting shift be {shift}""", file=f)
-                    print(f"conjure solve abnormal.essence {paramfilename} --solver={solver} --output-format=json", file=commandsfile)
+                    print(f"conjure solve abnormal.essence {paramfilename} --solver={solver} --output-format=json --copy-solutions=no", file=commandsfile)
