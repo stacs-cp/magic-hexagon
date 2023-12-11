@@ -7,18 +7,22 @@ pip install -qr requirements.txt
 
 mkdir -p outputs
 
+# also generates commands.txt
 python3 generate-params.py
 
 parallel --no-notice \
     --eta \
-    --joblog outputs/joblog.tsv \
-    --results outputs/results \
-    conjure solve abnormal.essence {} --solver=or-tools --output-format=json --solver-options "--threads 8" ::: *.param
+    --joblog outputs/joblog1.tsv \
+    --results outputs/results1 \
+    --timeout 600 \
+    :::: commands.txt
 
 parallel --no-notice \
     --eta \
-    --joblog outputs/joblog.tsv \
-    --results outputs/results \
+    --joblog outputs/joblog2.tsv \
+    --results outputs/results2 \
     python3 plot.py {} ::: conjure-output/*.solution.json
+
+rm -rf *.param
 
 deactivate
