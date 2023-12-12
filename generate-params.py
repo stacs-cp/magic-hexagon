@@ -1,18 +1,10 @@
 
 import os
 
-# solvers = ["or-tools", "chuffed", "kissat"]
-solvers = ["or-tools"]
-# solvers = ["chuffed", "kissat"]
+solvers = ["or-tools", "chuffed", "kissat"]
 
 orders = range(3, 8+1)
 shifts = range(-100, 100+1)
-
-# orders = [3]
-# shifts = range(0, 4)
-
-# orders = range(3, 5+1)
-# shifts = range(-10, 10+1)
 
 with open("commands.txt", "w") as commandsfile:
     for solver in solvers:

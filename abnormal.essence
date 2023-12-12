@@ -39,7 +39,7 @@ such that allDiff([ hexagon[i, j, k]
 
 find sumsto : int(0..total_sum)
 
-such that diameter * sumsto = total_sum
+$ such that diameter * sumsto = total_sum
 
 
 such that

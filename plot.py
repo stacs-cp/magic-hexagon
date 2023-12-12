@@ -1,9 +1,16 @@
 import sys
 import json
+import matplotlib
 import matplotlib.pyplot as plt
 from matplotlib.patches import RegularPolygon
 import numpy as np
 
+
+font = {'family' : 'normal',
+        'weight' : 'bold',
+        'size'   : 50}
+
+matplotlib.rc('font', **font)
 
 def view_hexagon(sol):
     # Extract 3D coordinates and labels

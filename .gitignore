@@ -5,5 +5,7 @@ conjure-output/*solution
 conjure-output/*infor
 myenv
 __pycache__
+figs
 
 
+native
