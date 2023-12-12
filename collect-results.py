@@ -4,7 +4,7 @@ import json
 import sys
 import pprint
 
-timelimit = 10*60
+timelimit = 2*60*60
 countBySolver = {}
 satisfiableBySolver = {}
 
