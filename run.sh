@@ -21,7 +21,7 @@ parallel --no-notice \
     --eta \
     --joblog outputs/joblog2.tsv \
     --results outputs/results2 \
-    python3 plot.py {} ::: conjure-output/*.solution.json
+    python3 plot.py {} ::: conjure-output*/*.solution.json
 
 rm -rf *.param
 
