@@ -4,7 +4,9 @@ import json
 import sys
 import pprint
 
-countBySolver = {"chuffed": 0, "kissat": 0, "or-tools": 0}
+timelimit = 10*60
+countBySolver = {}
+satisfiableBySolver = {}
 
 allInfo = []
 
@@ -30,11 +32,36 @@ for dirpath, dirnames, filenames in os.walk("conjure-output"):
                     info["TotalTime"] = "NA"
             except FileNotFoundError:
                 pass
-            allInfo.append(([solver, order, shift], info))
-            if float(info["SolverTotalTime"]) <= 10:
-                countBySolver[solver] += 1
+            if info["TotalTime"] != "NA":
+            # if "SolverTotalTime" in info.keys():
+                allInfo.append(([solver, order, shift], info))
+                # print(infofile)
+                if float(info["TotalTime"]) <= timelimit:
+                    try:
+                        countBySolver[order][solver] += 1
+                    except:
+                        try:
+                            countBySolver[order][solver] = 1
+                        except:
+                            countBySolver[order] = {}
+                            countBySolver[order][solver] = 1
 
-pprint.pprint(countBySolver)
+                    if info["SolverSatisfiable"] == "1":
+                        try:
+                            satisfiableBySolver[order][solver] += 1
+                        except:
+                            try:
+                                satisfiableBySolver[order][solver] = 1
+                            except:
+                                satisfiableBySolver[order] = {}
+                                satisfiableBySolver[order][solver] = 1
+
+# print("countBySolver")
+# pprint.pprint(countBySolver)
+for order in ["003", "004", "005", "006", "007", "008"]:
+        print(" ".join([str(countBySolver[order][solver]) for solver in ["chuffed", "kissat", "or-tools"]]))
+# print("satisfiableBySolver")
+# pprint.pprint(satisfiableBySolver)
 
 maxLength = 0
 maxNbInv = 0
@@ -45,7 +72,7 @@ for _, info in allInfo:
     headers = headers.union(info.keys())
 headers = sorted(list(headers))
 
-with open("outputs/info.csv", "w") as out:
+with open("results/info.csv", "w") as out:
     heading = ", ".join(["solver", "length", "nbInv"] + headers)
     print(heading, file=out)
     for [solver, length, nbInv], info in allInfo:

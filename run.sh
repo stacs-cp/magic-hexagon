@@ -1,6 +1,6 @@
 
 # installing python dependencies in a virtual environment
-# rm -rf myenv
+# rm -rf myenv # if needed
 python3 -m venv myenv
 source myenv/bin/activate
 pip install -qr requirements.txt
@@ -24,5 +24,8 @@ parallel --no-notice \
     python3 plot.py {} ::: conjure-output/*.solution.json
 
 rm -rf *.param
+
+mkdir -p results
+python3 collect-results.py
 
 deactivate
