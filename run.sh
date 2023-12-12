@@ -14,15 +14,15 @@ python3 generate-params.py
 
 parallel --no-notice \
     --eta \
-    --joblog outputs/joblog1.tsv \
-    --results outputs/results1 \
+    --joblog results/joblog1.tsv \
+    --results results/results1 \
     --timeout 3600 \
     :::: commands.txt
 
 parallel --no-notice \
     --eta \
-    --joblog outputs/joblog2.tsv \
-    --results outputs/results2 \
+    --joblog results/joblog2.tsv \
+    --results results/results2 \
     python3 plot.py {} ::: conjure-output*/*.solution.json
 
 rm -rf *.param
