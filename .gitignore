@@ -1,4 +1,5 @@
 conjure-output*/*fzn
+conjure-output*/*dimacs
 conjure-output*/*minion
 conjure-output*/*param
 conjure-output*/*solution
