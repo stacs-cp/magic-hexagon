@@ -8,3 +8,4 @@ results/joblog*
 results/results*
 __pycache__
 native
+*.param
