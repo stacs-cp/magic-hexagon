@@ -4,5 +4,7 @@ conjure-output*/*param
 conjure-output*/*solution
 conjure-output*/*infor
 myenv
+results/joblog*
+results/results*
 __pycache__
 native
