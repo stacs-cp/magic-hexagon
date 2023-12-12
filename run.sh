@@ -1,11 +1,13 @@
 
+mkdir -p results
+conjure --version > results/versions.txt
+savilerow -help | head -n1 >>  results/versions.txt
+
 # installing python dependencies in a virtual environment
 # rm -rf myenv # if needed
 python3 -m venv myenv
 source myenv/bin/activate
 pip install -qr requirements.txt
-
-mkdir -p outputs
 
 # also generates commands.txt
 python3 generate-params.py
@@ -25,7 +27,6 @@ parallel --no-notice \
 
 rm -rf *.param
 
-mkdir -p results
 python3 collect-results.py
 
 deactivate
