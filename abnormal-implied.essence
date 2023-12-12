@@ -1,23 +1,26 @@
 
 given order : int
+given shift : int
 
 letting ix be order - 1
 
 letting diameter be order * 2 - 1
-letting max_val be 3 * order**2 - 3 * order + 1
-letting total_sum be max_val * (max_val+1) / 2 $ or: sum i : int(1 .. max_val) . i
+letting min_val be shift
+letting max_val be shift - 1 + 3 * order**2 - 3 * order + 1
+letting total_sum be sum i : int(min_val .. max_val) . i
 
 $ See the "Cube coordinates" variant explained here: https://math.stackexchange.com/questions/2254655/hexagon-grid-coordinate-system
 $ Even better: https://www.redblobgames.com/grids/hexagons/#coordinates
 
-find hexagon : matrix indexed by [int(-ix..ix), int(-ix..ix), int(-ix..ix)] of int(0..max_val)
+find hexagon : matrix indexed by [int(-ix..ix), int(-ix..ix), int(-ix..ix)] of int(0, min_val..max_val)
 
 $ used cells
 such that
-[ hexagon[i, j, k] != 0
-| i, j, k : int(-ix..ix)
-, i + j + k = 0
-]
+min_val > 0 ->
+and([ hexagon[i, j, k] != 0
+    | i, j, k : int(-ix..ix)
+    , i + j + k = 0
+    ])
 
 $ unused cells
 such that
@@ -70,3 +73,7 @@ such that [A,B,C,D,E,F] <=lex [C,B,A,F,E,D]
 such that [A,B,C,D,E,F] <=lex [D,C,B,A,F,E]
 such that [A,B,C,D,E,F] <=lex [E,D,C,B,A,F]
 such that [A,B,C,D,E,F] <=lex [F,E,D,C,B,A]
+
+$ --------------------------------------------------------------------------------
+
+such that diameter * sumsto = total_sum

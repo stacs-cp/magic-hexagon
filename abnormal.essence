@@ -14,7 +14,6 @@ $ Even better: https://www.redblobgames.com/grids/hexagons/#coordinates
 
 find hexagon : matrix indexed by [int(-ix..ix), int(-ix..ix), int(-ix..ix)] of int(0, min_val..max_val)
 
-
 $ used cells
 such that
 min_val > 0 ->
@@ -30,36 +29,27 @@ such that
 , i + j + k != 0
 ]
 
-
 such that allDiff([ hexagon[i, j, k]
                   | i, j, k : int(-ix..ix)
                   , i + j + k = 0
                   ])
 
-
 find sumsto : int(0..total_sum)
-
-$ such that diameter * sumsto = total_sum
-
 
 such that
 [ sumsto = sum([hexagon[i, j, k] | j, k : int(-ix..ix)])
 | i : int(-ix..ix)
 ]
 
-
 such that
 [ sumsto = sum([hexagon[i, j, k] | i, k : int(-ix..ix)])
 | j : int(-ix..ix)
 ]
 
-
 such that
 [ sumsto = sum([hexagon[i, j, k] | i, j : int(-ix..ix)])
 | k : int(-ix..ix)
 ]
-
- 
 
 $ symmetry breaking
 $ see: https://proofwiki.org/wiki/Definition:Symmetry_Group_of_Regular_Hexagon#Group_Action_on_Vertices
@@ -83,4 +73,3 @@ such that [A,B,C,D,E,F] <=lex [C,B,A,F,E,D]
 such that [A,B,C,D,E,F] <=lex [D,C,B,A,F,E]
 such that [A,B,C,D,E,F] <=lex [E,D,C,B,A,F]
 such that [A,B,C,D,E,F] <=lex [F,E,D,C,B,A]
-

@@ -70,3 +70,7 @@ such that [A,B,C,D,E,F] <=lex [C,B,A,F,E,D]
 such that [A,B,C,D,E,F] <=lex [D,C,B,A,F,E]
 such that [A,B,C,D,E,F] <=lex [E,D,C,B,A,F]
 such that [A,B,C,D,E,F] <=lex [F,E,D,C,B,A]
+
+$ --------------------------------------------------------------------------------
+
+such that diameter * sumsto = total_sum
