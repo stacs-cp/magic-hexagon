@@ -1,10 +1,10 @@
 SolverMemOut:0
-SolverTotalTime:0.00
-SATClauses:38
+SolverTotalTime:73.28
+SATClauses:232888
 SavileRowClauseOut:0
-SavileRowTotalTime:0.146
-SolverSatisfiable:0
+SavileRowTotalTime:1.044
+SolverSatisfiable:1
 SavileRowTimeOut:0
 SolverTimeOut:0
-SolverNodes:0
-SATVars:0
+SolverNodes:893039
+SATVars:5841

@@ -1,6 +1,6 @@
-SolverTotalTime:0.066
+SolverTotalTime:0.068
 SavileRowClauseOut:0
-SavileRowTotalTime:0.398
+SavileRowTotalTime:0.488
 SolverFailures:0
 SolverSatisfiable:0
 SavileRowTimeOut:0
