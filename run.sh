@@ -27,6 +27,6 @@ parallel --no-notice \
 
 rm -rf *.param
 
-python3 collect-results.py
+python3 collect-results.py > results/collect-results-stdout.txt
 
 deactivate
