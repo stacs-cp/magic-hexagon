@@ -1,0 +1,4 @@
+Conjure: The Automated Constraint Modelling Tool
+Release version 2.5.1
+Repository version 922bfd8ee (2023-12-07 17:38:32 +0000)
+Savile Row 1.10.0 (Repository Version: f4e0425eb (2023-12-03 19:51:38 +0000))
