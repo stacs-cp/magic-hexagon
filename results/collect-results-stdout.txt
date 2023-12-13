@@ -2,13 +2,13 @@ abnormal 10
 countBySolver
 {'003': {'chuffed': 201, 'kissat': 201, 'or-tools': 201},
  '004': {'chuffed': 164, 'kissat': 164, 'or-tools': 198},
- '005': {'chuffed': 129, 'kissat': 128, 'or-tools': 199},
+ '005': {'chuffed': 129, 'kissat': 128, 'or-tools': 200},
  '006': {'chuffed': 87, 'kissat': 85, 'or-tools': 169},
  '007': {'chuffed': 37, 'kissat': 37, 'or-tools': 189},
  '008': {'chuffed': 16, 'kissat': 16, 'or-tools': 178}}
 201 201 201
 164 164 198
-129 128 199
+129 128 200
 87 85 169
 37 37 189
 16 16 178
@@ -22,13 +22,13 @@ abnormal 60
 countBySolver
 {'003': {'chuffed': 201, 'kissat': 201, 'or-tools': 201},
  '004': {'chuffed': 167, 'kissat': 167, 'or-tools': 199},
- '005': {'chuffed': 131, 'kissat': 131, 'or-tools': 199},
+ '005': {'chuffed': 131, 'kissat': 131, 'or-tools': 200},
  '006': {'chuffed': 92, 'kissat': 87, 'or-tools': 201},
  '007': {'chuffed': 37, 'kissat': 37, 'or-tools': 201},
  '008': {'chuffed': 16, 'kissat': 16, 'or-tools': 199}}
 201 201 201
 167 167 199
-131 131 199
+131 131 200
 92 87 201
 37 37 201
 16 16 199
@@ -42,13 +42,13 @@ abnormal 300
 countBySolver
 {'003': {'chuffed': 201, 'kissat': 201, 'or-tools': 201},
  '004': {'chuffed': 168, 'kissat': 169, 'or-tools': 199},
- '005': {'chuffed': 134, 'kissat': 133, 'or-tools': 199},
+ '005': {'chuffed': 134, 'kissat': 133, 'or-tools': 200},
  '006': {'chuffed': 94, 'kissat': 90, 'or-tools': 201},
  '007': {'chuffed': 38, 'kissat': 37, 'or-tools': 201},
  '008': {'chuffed': 21, 'kissat': 16, 'or-tools': 200}}
 201 201 201
 168 169 199
-134 133 199
+134 133 200
 94 90 201
 38 37 201
 21 16 200
@@ -62,13 +62,13 @@ abnormal 600
 countBySolver
 {'003': {'chuffed': 201, 'kissat': 201, 'or-tools': 201},
  '004': {'chuffed': 169, 'kissat': 171, 'or-tools': 200},
- '005': {'chuffed': 134, 'kissat': 134, 'or-tools': 200},
+ '005': {'chuffed': 134, 'kissat': 134, 'or-tools': 201},
  '006': {'chuffed': 94, 'kissat': 92, 'or-tools': 201},
  '007': {'chuffed': 40, 'kissat': 39, 'or-tools': 201},
  '008': {'chuffed': 23, 'kissat': 16, 'or-tools': 200}}
 201 201 201
 169 171 200
-134 134 200
+134 134 201
 94 92 201
 40 39 201
 23 16 200
@@ -96,7 +96,7 @@ countBySolver
 satisfiableBySolver
 {'003': {'chuffed': 2, 'kissat': 2, 'or-tools': 2},
  '004': {'chuffed': 1, 'kissat': 4, 'or-tools': 4},
- '005': {'chuffed': 1, 'kissat': 1, 'or-tools': 2}}
+ '005': {'chuffed': 1, 'kissat': 1, 'or-tools': 1}}
 
 
 
@@ -104,13 +104,13 @@ abnormal-implied 10
 countBySolver
 {'003': {'chuffed': 201, 'kissat': 201, 'or-tools': 201},
  '004': {'chuffed': 198, 'kissat': 197, 'or-tools': 201},
- '005': {'chuffed': 194, 'kissat': 193, 'or-tools': 196},
+ '005': {'chuffed': 194, 'kissat': 193, 'or-tools': 200},
  '006': {'chuffed': 191, 'kissat': 191, 'or-tools': 200},
  '007': {'chuffed': 190, 'kissat': 189, 'or-tools': 200},
  '008': {'chuffed': 188, 'kissat': 188, 'or-tools': 199}}
 201 201 201
 198 197 201
-194 193 196
+194 193 200
 191 191 200
 190 189 200
 188 188 199
@@ -124,13 +124,13 @@ abnormal-implied 60
 countBySolver
 {'003': {'chuffed': 201, 'kissat': 201, 'or-tools': 201},
  '004': {'chuffed': 199, 'kissat': 199, 'or-tools': 201},
- '005': {'chuffed': 194, 'kissat': 193, 'or-tools': 196},
+ '005': {'chuffed': 194, 'kissat': 193, 'or-tools': 200},
  '006': {'chuffed': 191, 'kissat': 191, 'or-tools': 200},
  '007': {'chuffed': 190, 'kissat': 189, 'or-tools': 200},
  '008': {'chuffed': 188, 'kissat': 188, 'or-tools': 201}}
 201 201 201
 199 199 201
-194 193 196
+194 193 200
 191 191 200
 190 189 200
 188 188 201
@@ -144,13 +144,13 @@ abnormal-implied 300
 countBySolver
 {'003': {'chuffed': 201, 'kissat': 201, 'or-tools': 201},
  '004': {'chuffed': 200, 'kissat': 200, 'or-tools': 201},
- '005': {'chuffed': 194, 'kissat': 196, 'or-tools': 196},
+ '005': {'chuffed': 194, 'kissat': 196, 'or-tools': 200},
  '006': {'chuffed': 192, 'kissat': 191, 'or-tools': 200},
  '007': {'chuffed': 190, 'kissat': 190, 'or-tools': 200},
  '008': {'chuffed': 188, 'kissat': 188, 'or-tools': 201}}
 201 201 201
 200 200 201
-194 196 196
+194 196 200
 192 191 200
 190 190 200
 188 188 201
@@ -165,13 +165,13 @@ abnormal-implied 600
 countBySolver
 {'003': {'chuffed': 201, 'kissat': 201, 'or-tools': 201},
  '004': {'chuffed': 200, 'kissat': 200, 'or-tools': 201},
- '005': {'chuffed': 194, 'kissat': 196, 'or-tools': 197},
+ '005': {'chuffed': 194, 'kissat': 196, 'or-tools': 201},
  '006': {'chuffed': 192, 'kissat': 191, 'or-tools': 201},
  '007': {'chuffed': 190, 'kissat': 190, 'or-tools': 201},
  '008': {'chuffed': 188, 'kissat': 188, 'or-tools': 201}}
 201 201 201
 200 200 201
-194 196 197
+194 196 201
 192 191 201
 190 190 201
 188 188 201
@@ -200,7 +200,7 @@ countBySolver
 satisfiableBySolver
 {'003': {'chuffed': 2, 'kissat': 2, 'or-tools': 2},
  '004': {'chuffed': 4, 'kissat': 4, 'or-tools': 4},
- '005': {'chuffed': 5, 'kissat': 2, 'or-tools': 5},
+ '005': {'chuffed': 5, 'kissat': 2, 'or-tools': 1},
  '006': {'kissat': 2, 'or-tools': 1}}
 
 
