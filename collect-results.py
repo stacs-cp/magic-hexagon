@@ -71,18 +71,18 @@ for model in ["abnormal", "abnormal-implied"]:
         maxNbInv = 0
         justTheCounts = {}
 
-        headers = set()
-        for _, info in allInfo:
-            headers = headers.union(info.keys())
-        headers = sorted(list(headers))
+    headers = set()
+    for _, info in allInfo:
+        headers = headers.union(info.keys())
+    headers = sorted(list(headers))
 
-        with open(f"results/info-{model}-{timelimit}.csv", "w") as out:
-            heading = ", ".join(["solver", "length", "nbInv"] + headers)
-            print(heading, file=out)
-            for [solver, length, nbInv], info in allInfo:
-                maxLength = max(maxLength, int(length))
-                maxNbInv = max(maxNbInv, int(nbInv))
-                if solver == "minionpar":
-                    justTheCounts[int(length), int(nbInv)] = info["SolverSolutionsFound"]
-                print(", ".join([solver, length, nbInv] + [info[k] if k in info.keys() else "NA"
-                    for k in headers]), file=out)
+    with open(f"results/info-{model}.csv", "w") as out:
+        heading = ", ".join(["solver", "length", "nbInv"] + headers)
+        print(heading, file=out)
+        for [solver, length, nbInv], info in allInfo:
+            maxLength = max(maxLength, int(length))
+            maxNbInv = max(maxNbInv, int(nbInv))
+            if solver == "minionpar":
+                justTheCounts[int(length), int(nbInv)] = info["SolverSolutionsFound"]
+            print(", ".join([solver, length, nbInv] + [info[k] if k in info.keys() else "NA"
+                for k in headers]), file=out)
