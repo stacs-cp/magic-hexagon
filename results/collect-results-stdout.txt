@@ -1,17 +1,17 @@
 abnormal 10
 countBySolver
 {'003': {'chuffed': 201, 'kissat': 201, 'or-tools': 201},
- '004': {'chuffed': 164, 'kissat': 164, 'or-tools': 198},
- '005': {'chuffed': 129, 'kissat': 128, 'or-tools': 200},
- '006': {'chuffed': 87, 'kissat': 85, 'or-tools': 169},
- '007': {'chuffed': 37, 'kissat': 37, 'or-tools': 189},
- '008': {'chuffed': 16, 'kissat': 16, 'or-tools': 178}}
+ '004': {'chuffed': 165, 'kissat': 165, 'or-tools': 198},
+ '005': {'chuffed': 129, 'kissat': 130, 'or-tools': 195},
+ '006': {'chuffed': 87, 'kissat': 86, 'or-tools': 181},
+ '007': {'chuffed': 37, 'kissat': 37, 'or-tools': 80},
+ '008': {'chuffed': 16, 'kissat': 16, 'or-tools': 38}}
 201 201 201
-164 164 198
-129 128 200
-87 85 169
-37 37 189
-16 16 178
+165 165 198
+129 130 195
+87 86 181
+37 37 80
+16 16 38
 satisfiableBySolver
 {'003': {'chuffed': 2, 'kissat': 2, 'or-tools': 2},
  '004': {'chuffed': 1, 'or-tools': 1}}
@@ -21,61 +21,61 @@ satisfiableBySolver
 abnormal 60
 countBySolver
 {'003': {'chuffed': 201, 'kissat': 201, 'or-tools': 201},
- '004': {'chuffed': 167, 'kissat': 167, 'or-tools': 199},
- '005': {'chuffed': 131, 'kissat': 131, 'or-tools': 200},
- '006': {'chuffed': 92, 'kissat': 87, 'or-tools': 201},
- '007': {'chuffed': 37, 'kissat': 37, 'or-tools': 201},
- '008': {'chuffed': 16, 'kissat': 16, 'or-tools': 199}}
+ '004': {'chuffed': 167, 'kissat': 169, 'or-tools': 199},
+ '005': {'chuffed': 131, 'kissat': 132, 'or-tools': 195},
+ '006': {'chuffed': 88, 'kissat': 89, 'or-tools': 182},
+ '007': {'chuffed': 37, 'kissat': 37, 'or-tools': 87},
+ '008': {'chuffed': 16, 'kissat': 16, 'or-tools': 41}}
 201 201 201
-167 167 199
-131 131 200
-92 87 201
-37 37 201
-16 16 199
-satisfiableBySolver
-{'003': {'chuffed': 2, 'kissat': 2, 'or-tools': 2},
- '004': {'chuffed': 1, 'or-tools': 2}}
-
-
-
-abnormal 300
-countBySolver
-{'003': {'chuffed': 201, 'kissat': 201, 'or-tools': 201},
- '004': {'chuffed': 168, 'kissat': 169, 'or-tools': 199},
- '005': {'chuffed': 134, 'kissat': 133, 'or-tools': 200},
- '006': {'chuffed': 94, 'kissat': 90, 'or-tools': 201},
- '007': {'chuffed': 38, 'kissat': 37, 'or-tools': 201},
- '008': {'chuffed': 21, 'kissat': 16, 'or-tools': 200}}
-201 201 201
-168 169 199
-134 133 200
-94 90 201
-38 37 201
-21 16 200
+167 169 199
+131 132 195
+88 89 182
+37 37 87
+16 16 41
 satisfiableBySolver
 {'003': {'chuffed': 2, 'kissat': 2, 'or-tools': 2},
  '004': {'chuffed': 1, 'kissat': 2, 'or-tools': 2}}
 
 
 
+abnormal 300
+countBySolver
+{'003': {'chuffed': 201, 'kissat': 201, 'or-tools': 201},
+ '004': {'chuffed': 168, 'kissat': 171, 'or-tools': 199},
+ '005': {'chuffed': 133, 'kissat': 134, 'or-tools': 195},
+ '006': {'chuffed': 89, 'kissat': 92, 'or-tools': 182},
+ '007': {'chuffed': 37, 'kissat': 38, 'or-tools': 87},
+ '008': {'chuffed': 16, 'kissat': 16, 'or-tools': 42}}
+201 201 201
+168 171 199
+133 134 195
+89 92 182
+37 38 87
+16 16 42
+satisfiableBySolver
+{'003': {'chuffed': 2, 'kissat': 2, 'or-tools': 2},
+ '004': {'chuffed': 1, 'kissat': 3, 'or-tools': 2}}
+
+
+
 abnormal 600
 countBySolver
 {'003': {'chuffed': 201, 'kissat': 201, 'or-tools': 201},
- '004': {'chuffed': 169, 'kissat': 171, 'or-tools': 200},
- '005': {'chuffed': 134, 'kissat': 134, 'or-tools': 201},
- '006': {'chuffed': 94, 'kissat': 92, 'or-tools': 201},
- '007': {'chuffed': 40, 'kissat': 39, 'or-tools': 201},
- '008': {'chuffed': 23, 'kissat': 16, 'or-tools': 200}}
+ '004': {'chuffed': 169, 'kissat': 171, 'or-tools': 201},
+ '005': {'chuffed': 133, 'kissat': 135, 'or-tools': 197},
+ '006': {'chuffed': 89, 'kissat': 92, 'or-tools': 182},
+ '007': {'chuffed': 38, 'kissat': 40, 'or-tools': 87},
+ '008': {'chuffed': 16, 'kissat': 16, 'or-tools': 42}}
 201 201 201
-169 171 200
-134 134 201
-94 92 201
-40 39 201
-23 16 200
+169 171 201
+133 135 197
+89 92 182
+38 40 87
+16 16 42
 satisfiableBySolver
 {'003': {'chuffed': 2, 'kissat': 2, 'or-tools': 2},
- '004': {'chuffed': 1, 'kissat': 3, 'or-tools': 3},
- '005': {'or-tools': 1}}
+ '004': {'chuffed': 1, 'kissat': 3, 'or-tools': 4},
+ '005': {'or-tools': 2}}
 
 
 
@@ -83,40 +83,40 @@ abnormal None
 countBySolver
 {'003': {'chuffed': 201, 'kissat': 201, 'or-tools': 201},
  '004': {'chuffed': 170, 'kissat': 173, 'or-tools': 201},
- '005': {'chuffed': 136, 'kissat': 137, 'or-tools': 201},
- '006': {'chuffed': 96, 'kissat': 94, 'or-tools': 201},
- '007': {'chuffed': 43, 'kissat': 42, 'or-tools': 201},
- '008': {'chuffed': 23, 'kissat': 16, 'or-tools': 201}}
+ '005': {'chuffed': 135, 'kissat': 138, 'or-tools': 197},
+ '006': {'chuffed': 92, 'kissat': 95, 'or-tools': 182},
+ '007': {'chuffed': 40, 'kissat': 42, 'or-tools': 87},
+ '008': {'chuffed': 16, 'kissat': 16, 'or-tools': 43}}
 201 201 201
 170 173 201
-136 137 201
-96 94 201
-43 42 201
-23 16 201
+135 138 197
+92 95 182
+40 42 87
+16 16 43
 satisfiableBySolver
 {'003': {'chuffed': 2, 'kissat': 2, 'or-tools': 2},
  '004': {'chuffed': 1, 'kissat': 4, 'or-tools': 4},
- '005': {'chuffed': 1, 'kissat': 1, 'or-tools': 1}}
+ '005': {'chuffed': 1, 'kissat': 1, 'or-tools': 2}}
 
 
 
 abnormal-implied 10
 countBySolver
 {'003': {'chuffed': 201, 'kissat': 201, 'or-tools': 201},
- '004': {'chuffed': 198, 'kissat': 197, 'or-tools': 201},
- '005': {'chuffed': 194, 'kissat': 193, 'or-tools': 200},
- '006': {'chuffed': 191, 'kissat': 191, 'or-tools': 200},
- '007': {'chuffed': 190, 'kissat': 189, 'or-tools': 200},
- '008': {'chuffed': 188, 'kissat': 188, 'or-tools': 199}}
+ '004': {'chuffed': 199, 'kissat': 197, 'or-tools': 201},
+ '005': {'chuffed': 194, 'kissat': 193, 'or-tools': 195},
+ '006': {'chuffed': 191, 'kissat': 191, 'or-tools': 194},
+ '007': {'chuffed': 190, 'kissat': 189, 'or-tools': 191},
+ '008': {'chuffed': 188, 'kissat': 188, 'or-tools': 190}}
 201 201 201
-198 197 201
-194 193 200
-191 191 200
-190 189 200
-188 188 199
+199 197 201
+194 193 195
+191 191 194
+190 189 191
+188 188 190
 satisfiableBySolver
 {'003': {'chuffed': 2, 'kissat': 2, 'or-tools': 2},
- '004': {'chuffed': 2, 'kissat': 1, 'or-tools': 4}}
+ '004': {'chuffed': 3, 'kissat': 1, 'or-tools': 4}}
 
 
 
@@ -124,16 +124,16 @@ abnormal-implied 60
 countBySolver
 {'003': {'chuffed': 201, 'kissat': 201, 'or-tools': 201},
  '004': {'chuffed': 199, 'kissat': 199, 'or-tools': 201},
- '005': {'chuffed': 194, 'kissat': 193, 'or-tools': 200},
- '006': {'chuffed': 191, 'kissat': 191, 'or-tools': 200},
- '007': {'chuffed': 190, 'kissat': 189, 'or-tools': 200},
- '008': {'chuffed': 188, 'kissat': 188, 'or-tools': 201}}
+ '005': {'chuffed': 194, 'kissat': 193, 'or-tools': 195},
+ '006': {'chuffed': 191, 'kissat': 191, 'or-tools': 194},
+ '007': {'chuffed': 190, 'kissat': 189, 'or-tools': 192},
+ '008': {'chuffed': 188, 'kissat': 188, 'or-tools': 190}}
 201 201 201
 199 199 201
-194 193 200
-191 191 200
-190 189 200
-188 188 201
+194 193 195
+191 191 194
+190 189 192
+188 188 190
 satisfiableBySolver
 {'003': {'chuffed': 2, 'kissat': 2, 'or-tools': 2},
  '004': {'chuffed': 3, 'kissat': 3, 'or-tools': 4}}
@@ -144,16 +144,16 @@ abnormal-implied 300
 countBySolver
 {'003': {'chuffed': 201, 'kissat': 201, 'or-tools': 201},
  '004': {'chuffed': 200, 'kissat': 200, 'or-tools': 201},
- '005': {'chuffed': 194, 'kissat': 196, 'or-tools': 200},
- '006': {'chuffed': 192, 'kissat': 191, 'or-tools': 200},
- '007': {'chuffed': 190, 'kissat': 190, 'or-tools': 200},
- '008': {'chuffed': 188, 'kissat': 188, 'or-tools': 201}}
+ '005': {'chuffed': 194, 'kissat': 196, 'or-tools': 195},
+ '006': {'chuffed': 192, 'kissat': 191, 'or-tools': 194},
+ '007': {'chuffed': 190, 'kissat': 190, 'or-tools': 192},
+ '008': {'chuffed': 188, 'kissat': 188, 'or-tools': 190}}
 201 201 201
 200 200 201
-194 196 200
-192 191 200
-190 190 200
-188 188 201
+194 196 195
+192 191 194
+190 190 192
+188 188 190
 satisfiableBySolver
 {'003': {'chuffed': 2, 'kissat': 2, 'or-tools': 2},
  '004': {'chuffed': 4, 'kissat': 4, 'or-tools': 4},
@@ -165,21 +165,20 @@ abnormal-implied 600
 countBySolver
 {'003': {'chuffed': 201, 'kissat': 201, 'or-tools': 201},
  '004': {'chuffed': 200, 'kissat': 200, 'or-tools': 201},
- '005': {'chuffed': 194, 'kissat': 196, 'or-tools': 201},
- '006': {'chuffed': 192, 'kissat': 191, 'or-tools': 201},
- '007': {'chuffed': 190, 'kissat': 190, 'or-tools': 201},
- '008': {'chuffed': 188, 'kissat': 188, 'or-tools': 201}}
+ '005': {'chuffed': 194, 'kissat': 196, 'or-tools': 196},
+ '006': {'chuffed': 192, 'kissat': 191, 'or-tools': 194},
+ '007': {'chuffed': 190, 'kissat': 190, 'or-tools': 192},
+ '008': {'chuffed': 188, 'kissat': 188, 'or-tools': 190}}
 201 201 201
 200 200 201
-194 196 201
-192 191 201
-190 190 201
-188 188 201
+194 196 196
+192 191 194
+190 190 192
+188 188 190
 satisfiableBySolver
 {'003': {'chuffed': 2, 'kissat': 2, 'or-tools': 2},
  '004': {'chuffed': 4, 'kissat': 4, 'or-tools': 4},
- '005': {'kissat': 2, 'or-tools': 1},
- '006': {'or-tools': 1}}
+ '005': {'kissat': 2, 'or-tools': 1}}
 
 
 
@@ -187,21 +186,21 @@ abnormal-implied None
 countBySolver
 {'003': {'chuffed': 201, 'kissat': 201, 'or-tools': 201},
  '004': {'chuffed': 200, 'kissat': 200, 'or-tools': 201},
- '005': {'chuffed': 199, 'kissat': 196, 'or-tools': 201},
- '006': {'chuffed': 192, 'kissat': 194, 'or-tools': 201},
- '007': {'chuffed': 190, 'kissat': 190, 'or-tools': 201},
- '008': {'chuffed': 188, 'kissat': 188, 'or-tools': 201}}
+ '005': {'chuffed': 198, 'kissat': 196, 'or-tools': 200},
+ '006': {'chuffed': 192, 'kissat': 194, 'or-tools': 196},
+ '007': {'chuffed': 190, 'kissat': 190, 'or-tools': 192},
+ '008': {'chuffed': 188, 'kissat': 188, 'or-tools': 190}}
 201 201 201
 200 200 201
-199 196 201
-192 194 201
-190 190 201
-188 188 201
+198 196 200
+192 194 196
+190 190 192
+188 188 190
 satisfiableBySolver
 {'003': {'chuffed': 2, 'kissat': 2, 'or-tools': 2},
  '004': {'chuffed': 4, 'kissat': 4, 'or-tools': 4},
- '005': {'chuffed': 5, 'kissat': 2, 'or-tools': 1},
- '006': {'kissat': 2, 'or-tools': 1}}
+ '005': {'chuffed': 4, 'kissat': 2, 'or-tools': 5},
+ '006': {'kissat': 2, 'or-tools': 2}}
 
 
 

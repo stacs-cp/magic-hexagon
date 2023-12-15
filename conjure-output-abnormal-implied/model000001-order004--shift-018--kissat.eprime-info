@@ -1,8 +1,8 @@
 SolverMemOut:0
-SolverTotalTime:51.11
+SolverTotalTime:50.65
 SATClauses:232888
 SavileRowClauseOut:0
-SavileRowTotalTime:0.524
+SavileRowTotalTime:0.53
 SolverSatisfiable:1
 SavileRowTimeOut:0
 SolverTimeOut:0
